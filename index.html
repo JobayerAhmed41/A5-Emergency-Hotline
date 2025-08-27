@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bangladesh Emergency Hotline</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="bg-gray-100 font-sans">
+
+  <!-- Navbar -->
+  <nav class="flex flex-wrap justify-between items-center bg-white text-black px-4 py-3 shadow">
+    <div class="flex items-center space-x-2">
+      <img src="./assets/logo.png" class="w-10 h-10" alt="logo">
+      <span class="font-bold text-lg text-[#006747]">Emergency Service</span>
+    </div>
+
+    <!-- Buttons -->
+    <div class="flex flex-wrap gap-2 mt-2 md:mt-0">
+      <button class="bg-[#41ff6b1a] px-4 py-2 rounded-full shadow flex items-center gap-2">
+        <span class="font-extrabold" id="heartCount">0</span>
+        <img class="w-6 h-6" src="./assets/heart.png" alt="">
+      </button>
+
+      <button class="bg-[#41ff6b1a] px-4 py-2 rounded-full flex items-center gap-2">
+        <span class="font-extrabold" id="coinCount">100</span>
+        <img class="w-6 h-6" src="./assets/coin.png" alt="">
+      </button>
+
+      <button class="bg-[#00A63E] px-4 py-2 rounded-full flex items-center gap-2">
+        <span class="font-bold text-white" id="copyCount">0</span>
+        <p class="font-bold text-white">copy</p>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="bg-[linear-gradient(90deg,rgba(1,49,34,1),rgba(0,103,71,1)_50%,rgba(1,50,35,1)_100%)] text-white text-center py-10 px-4">
+    <img src="./assets/logo.png" class="w-20 h-20 mx-auto mb-2" alt="logo">
+    <h1 class="text-2xl md:text-3xl font-bold">জরুরি সেবা ডিরেক্টরি</h1>
+    <p class="mt-2 text-sm md:text-base">Government Emergency Services at Your Fingertip - A Project by Government of the People’s Republic of Bangladesh</p>
+  </section>
+
+  <!-- Main Section -->
+  <main class="grid grid-cols-1 lg:grid-cols-3 gap-6 p-4 md:p-6">
+
+    <!-- Left: Card Section -->
+    <div class="lg:col-span-2 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+
+      <!-- Card Template -->
+      <!-- Each card has: flex flex-col justify-between min-h-[260px] -->
+
+      <!-- National Emergency -->
+      <div class="bg-white p-6 rounded-xl shadow-md flex flex-col justify-between min-h-[260px]">
+        <div>
+          <div class="flex justify-between items-center mb-4">
+            <button class="h-14 w-14 rounded-[16px] bg-[#FFE3E2] flex items-center justify-center">
+              <img src="./assets/emergency.png" alt="" class="h-8 w-8">
+            </button>
+            <button class="heartBtn text-gray-500"><i class="fa-regular fa-heart"></i></button>
+          </div>
+          <span class="font-bold text-lg">জাতীয় জরুরি সেবা</span>
+          <p class="text-sm text-gray-500">National Emergency</p>
+          <p class="text-2xl font-bold mt-1">999</p>
+          <span class="inline-block bg-[#F2F2F2] text-black-400 text-xs px-2 py-1 rounded">সরকারি</span>
+        </div>
+        <div class="flex space-x-2 mt-4">
+          <button class="copyBtn bg-gray-100 px-3 py-2 rounded-md flex-1" data-number="999"><i class="fa-regular fa-copy mr-1"></i> Copy</button>
+          <button class="callBtn bg-green-600 text-white px-3 py-2 rounded-md flex-1" data-name="জাতীয় জরুরি সেবা" data-number="999"><i class="fa-solid fa-phone mr-1"></i> Call</button>
+        </div>
+      </div>
+
+      <!-- Police -->
+      <div class="bg-white p-6 rounded-xl shadow-md flex flex-col justify-between min-h-[260px]">
+        <div>
+          <div class="flex justify-between items-center mb-4">
+            <button class="h-14 w-14 rounded-[16px] bg-[#E2F0FF] flex items-center justify-center">
+              <img src="./assets/police.png" alt="" class="h-8 w-8">
+            </button>
+            <button class="heartBtn text-gray-500"><i class="fa-regular fa-heart"></i></button>
+          </div>
+          <span class="font-bold text-lg">পুলিশ</span>
+          <p class="text-sm text-gray-500">Police</p>
+          <p class="text-2xl font-bold mt-1">999</p>
+          <span class="inline-blockbg-[#F2F2F2] text-black-400 text-xs px-2 py-1 rounded">পুলিশ</span>
+        </div>
+        <div class="flex space-x-2 mt-4">
+          <button class="copyBtn bg-gray-100 px-3 py-2 rounded-md flex-1" data-number="999"><i class="fa-regular fa-copy mr-1"></i> Copy</button>
+          <button class="callBtn bg-green-600 text-white px-3 py-2 rounded-md flex-1" data-name="পুলিশ" data-number="999"><i class="fa-solid fa-phone mr-1"></i> Call</button>
+        </div>
+      </div>
+
+      <!-- Fire Service -->
+      <div class="bg-white p-6 rounded-xl shadow-md flex flex-col justify-between min-h-[260px]">
+        <div>
+          <div class="flex justify-between items-center mb-4">
+            <button class="h-14 w-14 rounded-[16px] bg-[#FFE3E2] flex items-center justify-center">
+              <img src="./assets/fire-service.png" alt="" class="h-8 w-8">
+            </button>
+            <button class="heartBtn text-gray-500"><i class="fa-regular fa-heart"></i></button>
+          </div>
+          <span class="font-bold text-lg">ফায়ার সার্ভিস</span>
+          <p class="text-sm text-gray-500">Fire Service</p>
+          <p class="text-2xl font-bold mt-1">999</p>
+          <span class="inline-block bg-[#F2F2F2] text-black-400 text-xs px-2 py-1 rounded">ফায়ার</span>
+        </div>
+        <div class="flex space-x-2 mt-4">
+          <button class="copyBtn bg-gray-100 px-3 py-2 rounded-md flex-1" data-number="999"><i class="fa-regular fa-copy mr-1"></i> Copy</button>
+          <button class="callBtn bg-green-600 text-white px-3 py-2 rounded-md flex-1" data-name="ফায়ার সার্ভিস" data-number="999"><i class="fa-solid fa-phone mr-1"></i> Call</button>
+        </div>
+      </div>
+
+      <!-- Ambulance -->
+      <div class="bg-white p-6 rounded-xl shadow-md flex flex-col justify-between min-h-[260px]">
+        <div>
+          <div class="flex justify-between items-center mb-4">
+            <button class="h-14 w-14 rounded-[16px] bg-[#FFEFE2] flex items-center justify-center">
+              <img src="./assets/ambulance.png" alt="" class="h-8 w-8">
+            </button>
+            <button class="heartBtn text-gray-500"><i class="fa-regular fa-heart"></i></button>
+          </div>
+          <span class="font-bold text-lg">অ্যাম্বুলেন্স</span>
+          <p class="text-sm text-gray-500">Ambulance</p>
+          <p class="text-2xl font-bold mt-1">1994-999999</p>
+          <span class="inline-block bg-[#F2F2F2] text-black-400 text-xs px-2 py-1 rounded">স্বাস্থ্য</span>
+        </div>
+        <div class="flex space-x-2 mt-4">
+          <button class="copyBtn bg-gray-100 px-3 py-2 rounded-md flex-1" data-number="1994-999999"><i class="fa-regular fa-copy mr-1"></i> Copy</button>
+          <button class="callBtn bg-green-600 text-white px-3 py-2 rounded-md flex-1" data-name="অ্যাম্বুলেন্স" data-number="1994-999999"><i class="fa-solid fa-phone mr-1"></i> Call</button>
+        </div>
+      </div>
+
+      <!-- Women & Child -->
+      <div class="bg-white p-6 rounded-xl shadow-md flex flex-col justify-between min-h-[260px]">
+        <div>
+          <div class="flex justify-between items-center mb-4">
+            <button class="h-14 w-14 rounded-[16px] bg-[#FFE3E2] flex items-center justify-center">
+              <img src="./assets/emergency.png" alt="" class="h-8 w-8">
+            </button>
+            <button class="heartBtn text-gray-500"><i class="fa-regular fa-heart"></i></button>
+          </div>
+          <span class="font-bold text-lg">নারী ও শিশু সহায়তা</span>
+          <p class="text-sm text-gray-500">Women & Child Helpline</p>
+          <p class="text-2xl font-bold mt-1">109</p>
+          <span class="inline-block bg-[#F2F2F2] text-black-400 text-xs px-2 py-1 rounded">সহায়তা</span>
+        </div>
+        <div class="flex space-x-2 mt-4">
+          <button class="copyBtn bg-gray-100 px-3 py-2 rounded-md flex-1" data-number="109"><i class="fa-regular fa-copy mr-1"></i> Copy</button>
+          <button class="callBtn bg-green-600 text-white px-3 py-2 rounded-md flex-1" data-name="নারী ও শিশু সহায়তা" data-number="109"><i class="fa-solid fa-phone mr-1"></i> Call</button>
+        </div>
+      </div>
+
+      <!-- Anti-Corruption -->
+      <div class="bg-white p-6 rounded-xl shadow-md flex flex-col justify-between min-h-[260px]">
+        <div>
+          <div class="flex justify-between items-center mb-4">
+            <button class="h-14 w-14 rounded-[16px] bg-[#FFE3E2] flex items-center justify-center">
+              <img src="./assets/emergency.png" alt="" class="h-8 w-8">
+            </button>
+            <button class="heartBtn text-gray-500"><i class="fa-regular fa-heart"></i></button>
+          </div>
+          <span class="font-bold text-lg">দুদক</span>
+          <p class="text-sm text-gray-500">Anti-Corruption</p>
+          <p class="text-2xl font-bold mt-1">106</p>
+          <span class="inline-block bg-[#F2F2F2] text-black-400 text-xs px-2 py-1 rounded">সরকারি</span>
+        </div>
+        <div class="flex space-x-2 mt-4">
+          <button class="copyBtn bg-gray-100 px-3 py-2 rounded-md flex-1" data-number="106"><i class="fa-regular fa-copy mr-1"></i> Copy</button>
+          <button class="callBtn bg-green-600 text-white px-3 py-2 rounded-md flex-1" data-name="দুদক" data-number="106"><i class="fa-solid fa-phone mr-1"></i> Call</button>
+        </div>
+      </div>
+
+      <!-- Electricity -->
+      <div class="bg-white p-6 rounded-xl shadow-md flex flex-col justify-between min-h-[260px]">
+        <div>
+          <div class="flex justify-between items-center mb-4">
+            <button class="h-14 w-14 rounded-[16px] bg-[#E2F0FF] flex items-center justify-center">
+              <img src="./assets/emergency.png" alt="" class="h-8 w-8">
+            </button>
+            <button class="heartBtn text-gray-500"><i class="fa-regular fa-heart"></i></button>
+          </div>
+          <span class="font-bold text-lg">বিদ্যুৎ বিভাগ</span>
+          <p class="text-sm text-gray-500">Electricity Outage</p>
+          <p class="text-2xl font-bold mt-1">16216</p>
+          <span class="inline-block bg-[#F2F2F2] text-black-400 text-xs px-2 py-1 rounded">বিদ্যুৎ</span>
+        </div>
+        <div class="flex space-x-2 mt-4">
+          <button class="copyBtn bg-gray-100 px-3 py-2 rounded-md flex-1" data-number="16216"><i class="fa-regular fa-copy mr-1"></i> Copy</button>
+          <button class="callBtn bg-green-600 text-white px-3 py-2 rounded-md flex-1" data-name="বিদ্যুৎ বিভাগ" data-number="16216"><i class="fa-solid fa-phone mr-1"></i> Call</button>
+        </div>
+      </div>
+
+      <!-- Brac -->
+      <div class="bg-white p-6 rounded-xl shadow-md flex flex-col justify-between min-h-[260px]">
+        <div>
+          <div class="flex justify-between items-center mb-4">
+            <button class="h-14 w-14 rounded-[16px] bg-[#FFEFE2] flex items-center justify-center">
+              <img src="./assets/brac.png" alt="" class="h-8 w-8">
+            </button>
+            <button class="heartBtn text-gray-500"><i class="fa-regular fa-heart"></i></button>
+          </div>
+          <span class="font-bold text-lg">ব্র্যাক</span>
+          <p class="text-sm text-gray-500">Brac</p>
+          <p class="text-2xl font-bold mt-1">16445</p>
+          <span class="inline-block bg-[#F2F2F2] text-black-400 text-xs px-2 py-1 rounded">এনজিও</span>
+        </div>
+        <div class="flex space-x-2 mt-4">
+          <button class="copyBtn bg-gray-100 px-3 py-2 rounded-md flex-1" data-number="16445"><i class="fa-regular fa-copy mr-1"></i> Copy</button>
+          <button class="callBtn bg-green-600 text-white px-3 py-2 rounded-md flex-1" data-name="ব্র্যাক" data-number="16445"><i class="fa-solid fa-phone mr-1"></i> Call</button>
+        </div>
+      </div>
+
+      <!-- Bangladesh Railway -->
+      <div class="bg-white p-6 rounded-xl shadow-md flex flex-col justify-between min-h-[260px]">
+        <div>
+          <div class="flex justify-between items-center mb-4">
+            <button class="h-14 w-14 rounded-[16px] bg-[#E2F0FF] flex items-center justify-center">
+              <img src="./assets/Bangladesh-Railway.png" alt="" class="h-8 w-8">
+            </button>
+            <button class="heartBtn text-gray-500"><i class="fa-regular fa-heart"></i></button>
+          </div>
+          <span class="font-bold text-lg">বাংলাদেশ রেলওয়ে</span>
+          <p class="text-sm text-gray-500">Bangladesh Railway</p>
+          <p class="text-2xl font-bold mt-1">163</p>
+          <span class="inline-block bg-[#F2F2F2] text-black-400 text-xs px-2 py-1 rounded">পরিবহন</span>
+        </div>
+        <div class="flex space-x-2 mt-4">
+          <button class="copyBtn bg-gray-100 px-3 py-2 rounded-md flex-1" data-number="163"><i class="fa-regular fa-copy mr-1"></i> Copy</button>
+          <button class="callBtn bg-green-600 text-white px-3 py-2 rounded-md flex-1" data-name="বাংলাদেশ রেলওয়ে" data-number="163"><i class="fa-solid fa-phone mr-1"></i> Call</button>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Right: Call History -->
+    <div class="bg-white rounded-xl shadow-md p-4 flex flex-col min-h-[260px]">
+      <div class="flex justify-between items-center mb-3">
+        <h2 class="font-bold"><i class="fa-regular fa-clock"></i> Call History</h2>
+        <button id="clearHistory" class="text-sm text-white font-bold bg-green-400 px-4 py-2 rounded-full">Clear</button>
+      </div>
+      <ul id="historyList" class="text-sm space-y-2"></ul>
+    </div>
+  </main>
+<script src="./script.js"></script>
+</body>
+</html>
