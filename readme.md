@@ -25,6 +25,7 @@ querySelectorAll:
 •	Direct use of forEach() is possible.
 
 --------------------------------------------------------------------------------------------------------------------------
+
 2.How to make a new element and add it to the DOM. 
 
 •	To add a new element into a webpage:
@@ -36,12 +37,16 @@ const li = document.createElement("li");
 li.textContent = "New Item";            
 li.classList.add("highlight");
 document.getElementById("list").appendChild(li); 
+
 -------------------------------------------------------------------------------------------------------------------------
+
 3.Event Bubbling
 An event begins at the target element when you interact with it (for example, by clicking a button), and it gradually ascends via each of its parent containers until it reaches the top of the document. 
 For instance, 
 when you click a button inside a box, the button's event will be triggered first, followed by the box's event and finally the page's
+
 --------------------------------------------------------------------------------------------------------------------------
+
 4.Event Delegation
 One listener is placed on a parent element rather than numerous event listeners on child elements. You can determine which child was clicked when an event occurs on a child because the parent "catches" it as it bubbles up.
 
@@ -49,7 +54,9 @@ Why it's beneficial:
 • Less listeners save memory. 
 • Suitable for later-created elements (dynamic content). 
 • Simplifies and cleans up code.
+
 --------------------------------------------------------------------------------------------------------------------------
+
 5.The difference between stopPropagation() and preventDefault() 
 
 preventDefault() :
